@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p I'm Chandrika Annadanam
+  button(type="button", class="btn btn-secondary", onclick='update ()') Press Me
+
+  div(id="target") Display
+
+  script.  
+        let a =0
+        function update()
+        {
+           a=a+1;
+           document.getElementById("target").innerHTML=a;
+        }
