@@ -1,9 +1,6 @@
 var express = require('express');
+const Eagle_controlers= require('../controllers/Eagle');
 var router = express.Router();
-
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('Eagle', { title: 'Search Results by Eagle' });
-});
-
+/* GET Eagles */
+router.get('/', Eagle_controlers.Eagle_view_all_Page );
 module.exports = router;
