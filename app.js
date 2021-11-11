@@ -16,6 +16,7 @@ var EagleRouter = require('./routes/Eagle');
 var addmodsRouter = require('./routes/addmods');
 var selectorRouter = require('./routes/selector');
 var resourceRouter = require('./routes/resource');
+var Eagle = require("./models/Eagle");
 
 var app = express();
 
